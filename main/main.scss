@@ -25,40 +25,44 @@ section {
     }
 
     &:nth-of-type(2),
-        {
-        background: #dd0ba8;
+    &:nth-of-type(3) {
+        background: #0bdddd;
         height: calc(100vh - 8em);
         color: #0e0d0d;
-        grid-template-columns: 33% 33% 33%;
+        grid-template-columns: 50% 50%;
         display: grid;
 
         h3 {
             font-size: 3em;
             text-transform: uppercase;
             margin: 0;
+            text-align: center;
         }
 
         p {
             font-size: 1.3em;
+            text-align: center;
+            color: #250505
         }
 
         img {
             margin: 0 auto;
             display: block;
-            // width: 250px;
+            width: 250px;
         }
 
         a {
-            color: white;
+            // color: white;
         }
     }
 
     &:nth-of-type(3) {
-        background: rgb(29, 236, 226);
+        background: #f74417;
         grid-template-columns: repeat(3, 33.3%);
 
         p {
-            width: 50%;
+            // width: 50%;
+            text-align: center;
         }
     }
 
