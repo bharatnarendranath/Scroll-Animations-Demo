@@ -23,38 +23,41 @@ section h1 {
 }
 
 section:nth-of-type(1) {
-  background: #2b3033;
+  background: #ff0080;
   color: #ffffff;
 }
 
-section:nth-of-type(2), section:nth-of-type(3) {
-  background: #dde3e6;
+section:nth-of-type(2) {
+  background: #dd0ba8;
   height: calc(100vh - 8em);
-  color: #ffffff;
+  color: #0e0d0d;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
 }
 
-section:nth-of-type(2) h3, section:nth-of-type(3) h3 {
+section:nth-of-type(2) h3 {
   font-size: 3em;
   text-transform: uppercase;
   margin: 0;
 }
 
-section:nth-of-type(2) p, section:nth-of-type(3) p {
+section:nth-of-type(2) p {
   font-size: 1.3em;
 }
 
-section:nth-of-type(2) img, section:nth-of-type(3) img {
+section:nth-of-type(2) img {
   margin: 0 auto;
   display: block;
-  width: 250px;
+}
+
+section:nth-of-type(2) a {
+  color: white;
 }
 
 section:nth-of-type(3) {
-  background: #fff;
+  background: #1dece2;
   -ms-grid-columns: (33.3%)[3];
       grid-template-columns: repeat(3, 33.3%);
 }
